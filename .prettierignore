@@ -1,0 +1,9 @@
+node_modules
+.idea
+.nuxt
+.output
+.eslintcache
+package-lock.lock
+*.md
+.gitlab-ci.yml
+public/scripts/*
