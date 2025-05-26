@@ -42,7 +42,7 @@
                 <div class="rd-navbar-brand">
                   <a class="brand" href="index.html"
                     ><img
-                      src="/images/logo-default-115x62.png"
+                      src="/images/hum-logo-lg.png"
                       alt=""
                       width="115"
                       height="62"
@@ -1081,7 +1081,7 @@
               <div class="block-brand-modern-item">
                 <a href="index.html"
                   ><img
-                    src="/images/logo-default-115x62.png"
+                    src="/images/hum-logo-lg.png"
                     alt=""
                     width="115"
                     height="62"

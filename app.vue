@@ -1,13 +1,22 @@
 <template>
   <div>
     <Preloader ref="preloaderRef" />
-    <NuxtPage />
+
+    <NuxtLayout :name="layout">
+      <NuxtPage />
+    </NuxtLayout>
+
     <div class="snackbars" id="form-output-global"></div>
   </div>
 </template>
 
 <script setup>
+const route = useRoute();
 const preloaderRef = ref(null);
+
+const layout = computed(() => {
+  return route.meta?.layout ?? "default";
+});
 
 onMounted(() => {
   setTimeout(() => {

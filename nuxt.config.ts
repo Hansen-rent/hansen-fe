@@ -5,11 +5,18 @@ export default defineNuxtConfig({
 
   app: {
     head: {
-      title: "Hansen Rent — Оренда спецтехніки",
+      title: "Hansen Rent",
       meta: [
         {
           name: "description",
           content: "Оренда будівельної техніки по Україні",
+        },
+      ],
+      link: [
+        {
+          rel: "stylesheet",
+          type: "text/css",
+          href: "https://fonts.googleapis.com/css?family=Lato:400,700%7CPoppins:300,400,500,600,700",
         },
       ],
       script: [
