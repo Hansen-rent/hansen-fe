@@ -106,12 +106,12 @@
 					return !/(\#|callto:|tel:|mailto:|:\/\/)/.test(link) && !event.currentTarget.hasAttribute('data-lightgallery');
 				},
 				onTransitionStart: function (options) {
-					setTimeout(function () {
-						plugins.preloader.removeClass('loaded');
-					}, options.duration * .75);
+					// setTimeout(function () {
+					// 	plugins.preloader.removeClass('loaded');
+					// }, options.duration * .75);
 				},
 				onReady: function () {
-					plugins.preloader.addClass('loaded');
+					// plugins.preloader.addClass('loaded');
 					windowReady = true;
 				}
 			});
@@ -977,7 +977,7 @@
 
 		// RD Search
 		if (plugins.search.length || plugins.searchResults) {
-			var handler = "bat/rd-search.php";
+			var handler = "/bat/rd-search.php";
 			var defaultTemplate = '<h5 class="search-title"><a target="_top" href="#{href}" class="search-link">#{title}</a></h5>' +
 				'<p>...#{token}...</p>' +
 				'<p class="match"><em>Terms matched: #{count} - URL: #{href}</em></p>';
@@ -1502,7 +1502,7 @@
 
 								$.ajax({
 									method: "POST",
-									url: "bat/reCaptcha.php",
+									url: "/bat/reCaptcha.php",
 									data: {'g-recaptcha-response': captchaToken},
 									async: false
 								})

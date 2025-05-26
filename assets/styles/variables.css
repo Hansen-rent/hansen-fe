@@ -1,0 +1,5 @@
+:root {
+  --blue-300-rgb: 37, 53, 114;
+
+  --accent-bg: rgba(var(--blue-300-rgb), 1);
+}

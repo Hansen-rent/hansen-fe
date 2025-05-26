@@ -6,4 +6,10 @@ node_modules
 package-lock.lock
 *.md
 .gitlab-ci.yml
+
+# Base external scripts
 public/scripts/*
+
+# Base external styles
+assets/styles/bootstrap.css
+assets/styles/style.css

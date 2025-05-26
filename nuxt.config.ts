@@ -19,11 +19,7 @@ export default defineNuxtConfig({
     },
   },
 
-  css: [
-    "~/assets/styles/bootstrap.css",
-    "~/assets/styles/fonts.css",
-    "~/assets/styles/style.css",
-  ],
+  css: ["~/assets/styles/index.css"],
 
   devtools: { enabled: true },
   compatibilityDate: "2025-05-15",
