@@ -9565,19 +9565,19 @@ html.rd-navbar-fixed-linked.rd-search-active {
 .rd-navbar-classic.rd-navbar-static .brand-logo-stuck {
   position: absolute;
   left: 50%;
-  top: 43px;
-  max-width: 87px;
+  top: 50px;
+  max-width: 120px;
   opacity: 0;
   transform: translate(-50%, -30px);
   transition: 0.15s ease-out all;
 }
 
 .rd-navbar-classic.rd-navbar-static .rd-navbar-brand .brand-logo-stuck {
-  max-width: 87px;
+  max-width: 120px;
 }
 
 .rd-navbar-classic.rd-navbar-static .rd-navbar-brand .brand-logo-stuck img {
-  max-width: 87px;
+  max-width: 120px;
 }
 
 .rd-navbar-classic.rd-navbar-static .rd-nav-link {

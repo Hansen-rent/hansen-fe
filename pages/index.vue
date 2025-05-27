@@ -1,7 +1,8 @@
 <template>
   <div class="page">
+    <!-- Hero section -->
     <section
-      class="parallax-overlay parallax-container section"
+      class="hero-section-parallax-overlay parallax-container section"
       data-parallax-img="/images/home-page/main-bg.jpg"
     >
       <div class="parallax-content section hero-section context-dark">
@@ -12,7 +13,7 @@
           <div class="hero-section-logo-wrapper">
             <img
               class="hero-section-logo"
-              src="/images/hum-logo-lg.png"
+              src="/images/hum-logo-m.png"
               alt="HUM Logo"
               width="210"
               height="70"
@@ -22,323 +23,79 @@
         </div>
       </div>
     </section>
-    <!-- Different Layout-->
-    <section class="section section-lg bg-default text-center">
+
+    <section class="second-section section section-lg bg-default">
       <div class="container">
-        <h3 class="heading-decoration"><span>4 different layouts</span></h3>
-        <div class="row row-30">
-          <div class="col-sm-6">
-            <a class="demo-layout" href="home-1.html"
-              ><img
-                src="/images/landing-layout-01-568x465.png"
-                alt=""
-                width="568"
-                height="465"
-              /><span class="heading-4">Classic</span></a
-            >
-          </div>
-          <div class="col-sm-6">
-            <a class="demo-layout" href="home-2.html"
-              ><img
-                src="/images/landing-layout-02-568x465.png"
-                alt=""
-                width="568"
-                height="465"
-              /><span class="heading-4">Modern</span></a
-            >
-          </div>
-          <div class="col-sm-6">
-            <a class="demo-layout" href="home-3.html"
-              ><img
-                src="/images/landing-layout-03-568x465.png"
-                alt=""
-                width="568"
-                height="465"
-              /><span class="heading-4">Sidebar</span></a
-            >
-          </div>
-          <div class="col-sm-6">
-            <a class="demo-layout" href="#"
-              ><img
-                src="/images/landing-layout-04-568x465.png"
-                alt=""
-                width="568"
-                height="465"
-              /><span class="heading-4">Coming Soon</span></a
-            >
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- What you get-->
-    <section
-      class="parallax-container section"
-      data-parallax-img="/images/landing-bg-parallax-01-1920x763.jpg"
-    >
-      <div
-        class="parallax-content section section-lg parallax-dark context-dark text-center"
-      >
-        <div class="container">
-          <h3 class="heading-decoration heading-decoration-modern">
-            <span>What you get With top construction</span>
-          </h3>
-          <div class="row row-30">
-            <div class="col-md-6 col-lg-3">
-              <div class="box-features-hexagon">
-                <div class="box-features-hexagon-icon">
-                  <span class="icon mercury-icon-mobile novi-icon" />
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    xmlns:xlink="http://www.w3.org/1999/xlink"
-                    preserveAspectRatio="xMidYMid"
-                    width="80"
-                    height="91"
-                    viewBox="0 0 80 91"
-                  >
-                    <defs />
-                    <path
-                      d="M40.000,89.999 L0.990,67.749 L0.990,23.249 L40.000,0.999 L79.010,23.249 L79.010,67.749 L40.000,89.999 Z"
-                    />
-                  </svg>
-                </div>
-                <h5>Full Responsiveness</h5>
-                <p>
-                  Due to template’s responsiveness, it can be displayed on any
-                  device.
-                </p>
-              </div>
-            </div>
-            <div class="col-md-6 col-lg-3">
-              <div class="box-features-hexagon">
-                <div class="box-features-hexagon-icon">
-                  <span class="icon fl-bigmug-line-two316 novi-icon" />
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    xmlns:xlink="http://www.w3.org/1999/xlink"
-                    preserveAspectRatio="xMidYMid"
-                    width="80"
-                    height="91"
-                    viewBox="0 0 80 91"
-                  >
-                    <defs />
-                    <path
-                      d="M40.000,89.999 L0.990,67.749 L0.990,23.249 L40.000,0.999 L79.010,23.249 L79.010,67.749 L40.000,89.999 Z"
-                    />
-                  </svg>
-                </div>
-                <h5>Free Updates</h5>
-                <p>The template is provided with free and regular updates.</p>
-              </div>
-            </div>
-            <div class="col-md-6 col-lg-3">
-              <div class="box-features-hexagon">
-                <div class="box-features-hexagon-icon">
-                  <span class="icon fl-bigmug-line-square160 novi-icon" />
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    xmlns:xlink="http://www.w3.org/1999/xlink"
-                    preserveAspectRatio="xMidYMid"
-                    width="80"
-                    height="91"
-                    viewBox="0 0 80 91"
-                  >
-                    <defs />
-                    <path
-                      d="M40.000,89.999 L0.990,67.749 L0.990,23.249 L40.000,0.999 L79.010,23.249 L79.010,67.749 L40.000,89.999 Z"
-                    />
-                  </svg>
-                </div>
-                <h5>Advanced UI Kit</h5>
-                <p>
-                  Improve the pages of your website with our new Advanced UI
-                  Kit.
-                </p>
-              </div>
-            </div>
-            <div class="col-md-6 col-lg-3">
-              <div class="box-features-hexagon">
-                <div class="box-features-hexagon-icon">
-                  <span class="icon fl-bigmug-line-equalization3 novi-icon" />
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    xmlns:xlink="http://www.w3.org/1999/xlink"
-                    preserveAspectRatio="xMidYMid"
-                    width="80"
-                    height="91"
-                    viewBox="0 0 80 91"
-                  >
-                    <defs />
-                    <path
-                      d="M40.000,89.999 L0.990,67.749 L0.990,23.249 L40.000,0.999 L79.010,23.249 L79.010,67.749 L40.000,89.999 Z"
-                    />
-                  </svg>
-                </div>
-                <h5>Bootstrap Toolkit</h5>
-                <p>
-                  Bootstrap toolkit offers impressive website customization
-                  possibilities.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- Portfolio-->
-    <section class="section section-lg bg-default text-center">
-      <div class="container">
-        <h3 class="heading-decoration">
-          <span>more opportunities for your portfolio</span>
-        </h3>
         <div class="row row-30">
           <div class="col-md-6">
-            <div class="demo-portfolio-box">
-              <img
-                src="/images/landing-portfolio-01-537x436.jpg"
-                alt=""
-                width="537"
-                height="436"
-              />
-            </div>
+            <img
+              src="/images/home-page/page2_img2.jpeg"
+              alt=""
+              width="770"
+              height="485"
+            />
           </div>
+          <div class="second-section-list-wrapper col-md-6">
+            <h4 class="second-section-list-title mb-2">ЦІЛІ:</h4>
+            <ul class="second-section-list">
+              <li class="second-section-list-item">
+                Забезпечити доступне житло для українських ВПО та інших осіб,
+                які постраждали від війни.
+              </li>
+              <li class="second-section-list-item">
+                Надати широкий спектр соціальної інфраструктури та зручностей.
+              </li>
+              <li class="second-section-list-item">
+                Розробляти якісні, сучасні та енергоефективні будівлі.
+              </li>
+              <li class="second-section-list-item">
+                Пріоритезувати соціальну інтеграцію та сприяти покращенню
+                фізичного й психічного здоров’я українських ВПО
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="row row-30 flex-md-row-reverse">
           <div class="col-md-6">
-            <div class="demo-portfolio-box">
-              <img
-                src="/images/landing-portfolio-02-537x436.jpg"
-                alt=""
-                width="537"
-                height="436"
-              />
-            </div>
+            <img
+              src="/images/home-page/page2_img1.jpeg"
+              alt=""
+              width="770"
+              height="485"
+            />
+          </div>
+          <div class="second-section-text col-md-6">
+            <p>
+              “Ваші гроші – це не благодійність. Це інвестиція у глобальну
+              безпеку та демократію, до якої ми ставимося найвідповідальніше.”
+            </p>
+            <p>
+              - <span class="flat-text">Президент</span> Володимир Зеленський
+            </p>
           </div>
         </div>
       </div>
     </section>
-    <!-- Section counters-->
-    <section
-      class="parallax-container section box-counter-wrap-modern"
-      data-parallax-img="/images/bg-image-08-1920x777.jpg"
-    >
-      <div
-        class="parallax-content section-md parallax-dark context-dark text-center"
-      >
-        <div class="container">
-          <div class="row row-30">
-            <div class="col-6 col-md-3">
-              <!-- Box counter-->
-              <article class="box-counter">
-                <div class="box-counter-main"><span>10</span></div>
-                <p class="box-counter-title">Years of experience</p>
-              </article>
-            </div>
-            <div class="col-6 col-md-3">
-              <!-- Box counter-->
-              <article class="box-counter">
-                <div class="box-counter-main">
-                  <div class="counter counter-zero">04</div>
-                </div>
-                <p class="box-counter-title">Perfect layouts</p>
-              </article>
-            </div>
-            <div class="col-6 col-md-3">
-              <!-- Box counter-->
-              <article class="box-counter">
-                <div class="box-counter-main">
-                  <div class="counter">26</div>
-                </div>
-                <p class="box-counter-title">Qualified specialists</p>
-              </article>
-            </div>
-            <div class="col-6 col-md-3">
-              <!-- Box counter-->
-              <article class="box-counter">
-                <div class="box-counter-main">
-                  <div class="counter counter-plus">30</div>
-                </div>
-                <p class="box-counter-title">Psd files</p>
-              </article>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- Nice Bonus-->
-    <section class="section section-lg bg-default text-center">
-      <div class="container">
-        <h3 class="heading-decoration"><span>a nice bonus</span></h3>
-        <div class="row row-30">
-          <div class="col-lg-6">
-            <div class="banner">
-              <div class="banner-inner">
-                <div class="banner-content banner-content-sm">
-                  <div class="banner-title">
-                    <h3>PSD and Images</h3>
-                  </div>
-                  <p>
-                    PSD and images are included! Save more than $35 on awesome
-                    premium images.
-                  </p>
-                </div>
-              </div>
-              <div class="banner-image">
-                <img
-                  src="/images/brand-01-568x402.jpg"
-                  alt=""
-                  width="568"
-                  height="402"
-                />
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-6">
-            <div class="banner">
-              <div class="banner-inner">
-                <div class="banner-content">
-                  <div class="banner-title">
-                    <h3>24/7 Support</h3>
-                  </div>
-                  <p>
-                    Our Support Service is always available 24 hours a day, 7
-                    days a week to help you create your own business solution.
-                  </p>
-                </div>
-              </div>
-              <div class="banner-image">
-                <img
-                  src="/images/brand-02-568x402.jpg"
-                  alt=""
-                  width="568"
-                  height="402"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- Get Template-->
-    <section class="section section-lg bg-gray-100 text-center">
-      <div class="container">
-        <div class="box-get-template">
-          <h3 class="text-uppercase">
-            It's time to try the template in action
-          </h3>
-          <p>
-            Top Project can become your No. 1 web solution for almost any
-            purpose. Try it out now!
-          </p>
-          <a
-            class="button button-lesser button-primary-light"
-            href="#get-template"
-            >Get the template now</a
-          >
-        </div>
-      </div>
-    </section>
-    <!-- Footer Classic-->
+
+    <div class="container">
+      <img
+        class="presentation-img"
+        src="/images/home-page/presentation-1.jpg"
+        alt=""
+        width="1600"
+        height="900"
+      />
+      <img
+        class="presentation-img"
+        src="/images/home-page/presentation-2.jpg"
+        alt=""
+        width="1600"
+        height="900"
+      />
+    </div>
     <footer
-      class="footer-classic context-dark parallax-container"
-      data-parallax-img="/images/bg-image-01-1920x1100.jpg"
+      class="footer-parallax-overlay footer-classic context-dark parallax-container"
+      data-parallax-img="/images/footer.jpg"
     >
       <div class="parallax-content">
         <div class="section-sm">
@@ -447,7 +204,7 @@
 </template>
 
 <style scoped>
-.parallax-overlay::after {
+.hero-section-parallax-overlay::after {
   content: "";
   position: absolute;
   top: 0;
@@ -484,12 +241,6 @@
   text-transform: uppercase;
 }
 
-@media (min-width: 1200px) and (min-height: 857px) {
-  .hero-section {
-    padding-bottom: 185px;
-  }
-}
-
 .hero-section-divider {
   height: 6px;
   width: 200px;
@@ -519,5 +270,75 @@
   padding: 2px;
   background-color: var(--white-col);
   border-radius: 6px;
+}
+
+@media (min-width: 1200px) and (min-height: 857px) {
+  .hero-section {
+    padding-bottom: 185px;
+  }
+}
+
+.second-section {
+  background-color: rgba(var(--blue-500-rgb), 1);
+  color: var(--secondary-col);
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.second-section-list-wrapper {
+  padding: 48px;
+  background-color: var(--secondary-col);
+  color: rgba(var(--blue-500-rgb), 1);
+  font-size: 16px;
+}
+
+.second-section-list {
+  padding-left: 20px;
+  font-weight: 400;
+}
+
+.second-section-list-title {
+  font-size: 32px;
+  color: rgba(var(--blue-500-rgb), 1);
+}
+
+.second-section-list-item {
+  position: relative;
+}
+
+.second-section-list-item:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.second-section-list-item::before {
+  content: "\00B7";
+  position: absolute;
+  top: 50%;
+  left: -14px;
+  transform: translate(-50%, -54%);
+  color: rgba(var(--blue-500-rgb), 1);
+  font-size: 52px;
+}
+
+.second-section-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 30px;
+  text-align: center;
+}
+
+.flat-text {
+  font-weight: 400;
+}
+
+.footer-parallax-overlay::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--home-page-parallax-overlay-bg);
 }
 </style>

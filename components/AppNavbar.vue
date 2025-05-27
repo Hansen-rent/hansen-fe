@@ -32,19 +32,23 @@
               </button>
               <!-- RD Navbar Brand-->
               <div class="rd-navbar-brand">
-                <!--Brand--><a class="brand brand-logo" href="index.html"
-                  ><img
+                <!--Brand-->
+                <RouterLink to="/" class="brand brand-logo">
+                  <img
                     src="/images/hum-logo-lg.png"
                     alt=""
                     width="282"
-                    height="141" /></a
-                ><a class="brand brand-logo-stuck" href="index.html"
-                  ><img
-                    src="/images/hum-logo-lg.png"
+                    height="141"
+                  />
+                </RouterLink>
+                <RouterLink to="/" class="brand brand-logo-stuck">
+                  <img
+                    src="/images/hum-logo-m.png"
                     alt=""
                     width="115"
                     height="62"
-                /></a>
+                  />
+                </RouterLink>
                 <div class="rd-navbar-brand-triangle"></div>
               </div>
             </div>
