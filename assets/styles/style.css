@@ -7626,8 +7626,8 @@ html:not(.lt-ie10) .not-animated {
 .ui-to-top:focus,
 .ui-to-top:active,
 .ui-to-top.active {
-  color: #ffffff;
-  background: #fc6c1e;
+  color: var(--accent-col);
+  background: var(--creamy-col);
 }
 
 .ui-to-top:hover {
@@ -7843,49 +7843,6 @@ html.tablet .ui-to-top {
   display: block;
 }
 
-.rd-navbar-search {
-  position: relative;
-  display: inline-flex;
-}
-
-.rd-navbar-search .form-input {
-  padding-right: 50px;
-}
-
-.rd-navbar-search .rd-search-form-submit {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  width: 50px;
-  padding: 0;
-  margin: 0;
-  border: none;
-  cursor: pointer;
-  background-color: transparent;
-  color: #cccccc;
-  transition: 0.33s;
-}
-
-.rd-navbar-search .rd-search-form-submit:hover {
-  color: #fc6c1e;
-}
-
-.rd-navbar-search-toggle {
-  background: none;
-  border: none;
-  display: inline-block;
-  padding: 0;
-  outline: none;
-  outline-offset: 0;
-  cursor: pointer;
-  -webkit-appearance: none;
-}
-
-.rd-navbar-search-toggle::-moz-focus-inner {
-  border: none;
-  padding: 0;
-}
 
 .rd-navbar-dropdown {
   display: none;
@@ -8142,10 +8099,6 @@ html.tablet .ui-to-top {
   transform: translate3d(0, 0, 0);
 }
 
-.rd-navbar-static .rd-navbar-search.active .rd-search {
-  visibility: visible;
-  opacity: 1;
-}
 
 .rd-navbar-static .rd-search {
   position: absolute;
@@ -8157,81 +8110,6 @@ html.tablet .ui-to-top {
   transition: 0.3s;
   margin-top: 20px;
   z-index: 2;
-}
-
-.rd-navbar-static * + .rd-navbar-search {
-  margin-left: 25px;
-}
-
-.rd-navbar-static .rd-navbar-search-toggle {
-  display: inline-flex;
-  color: #151515;
-}
-
-.rd-navbar-static .rd-navbar-search-toggle span {
-  display: inline-block;
-  position: relative;
-  width: 24px;
-  height: 24px;
-  font-size: 24px;
-  line-height: 24px;
-  text-align: center;
-  cursor: pointer;
-  background: none;
-  border: none;
-  outline: none;
-  padding: 0;
-}
-
-.rd-navbar-static .rd-navbar-search-toggle span,
-.rd-navbar-static .rd-navbar-search-toggle span::before,
-.rd-navbar-static .rd-navbar-search-toggle span::after {
-  transition: 0.3s all ease-in-out;
-}
-
-.rd-navbar-static .rd-navbar-search-toggle span::before,
-.rd-navbar-static .rd-navbar-search-toggle span::after {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-}
-
-.rd-navbar-static .rd-navbar-search-toggle span::before {
-  content: "";
-  transform: rotate(0deg) scale(1);
-  opacity: 1;
-  visibility: visible;
-  font-family: "fl-bigmug-line";
-}
-
-.rd-navbar-static .rd-navbar-search-toggle span::after {
-  content: "";
-  transform: rotate(-90deg) scale(0.4);
-  opacity: 0;
-  visibility: hidden;
-  font-family: "Material Design Icons";
-}
-
-.rd-navbar-static .rd-navbar-search-toggle.active span::before {
-  opacity: 0;
-  visibility: hidden;
-  transform: rotate(90deg) scale(0.4);
-}
-
-.rd-navbar-static .rd-navbar-search-toggle.active span::after {
-  transform: rotate(0deg) scale(1);
-  opacity: 1;
-  visibility: visible;
-}
-
-.rd-navbar-static .rd-navbar-search-toggle span {
-  transition: 0s ease-out all;
-}
-
-.rd-navbar-static .rd-navbar-search-toggle:hover span {
-  color: #fc6c1e;
 }
 
 .rd-navbar-static.rd-navbar--is-clone {
@@ -8519,107 +8397,6 @@ html.tablet .ui-to-top {
   float: left;
 }
 
-.rd-navbar-fixed .rd-navbar-search .rd-search {
-  position: fixed;
-  right: 0;
-  left: 0;
-  top: 56px;
-  z-index: 1079;
-  width: 100%;
-  opacity: 0;
-  visibility: hidden;
-  transition: 0.3s;
-  transform: translate3d(0, -10px, 0);
-}
-
-.rd-navbar-fixed .rd-navbar-search .rd-search-results-live {
-  display: none;
-}
-
-.rd-navbar-fixed .rd-navbar-search .form-input {
-  padding-right: 50px;
-}
-
-.rd-navbar-fixed .rd-navbar-search .rd-search-form-submit {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  width: 50px;
-  padding: 0;
-  margin: 0;
-  border: none;
-  background-color: transparent;
-}
-
-.rd-navbar-fixed .rd-navbar-search.active .rd-search {
-  opacity: 1;
-  visibility: visible;
-  transform: none;
-}
-
-.rd-navbar-fixed .rd-navbar-search-toggle {
-  display: inline-flex;
-}
-
-.rd-navbar-fixed .rd-navbar-search-toggle span {
-  display: inline-block;
-  position: relative;
-  width: 48px;
-  height: 48px;
-  font-size: 26px;
-  line-height: 48px;
-  text-align: center;
-  cursor: pointer;
-  background: none;
-  border: none;
-  outline: none;
-  padding: 0;
-}
-
-.rd-navbar-fixed .rd-navbar-search-toggle span,
-.rd-navbar-fixed .rd-navbar-search-toggle span::before,
-.rd-navbar-fixed .rd-navbar-search-toggle span::after {
-  transition: 0.3s all ease-in-out;
-}
-
-.rd-navbar-fixed .rd-navbar-search-toggle span::before,
-.rd-navbar-fixed .rd-navbar-search-toggle span::after {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-}
-
-.rd-navbar-fixed .rd-navbar-search-toggle span::before {
-  content: "";
-  transform: rotate(0deg) scale(1);
-  opacity: 1;
-  visibility: visible;
-  font-family: "Material Design Icons";
-}
-
-.rd-navbar-fixed .rd-navbar-search-toggle span::after {
-  content: "";
-  transform: rotate(-90deg) scale(0.4);
-  opacity: 0;
-  visibility: hidden;
-  font-family: "Material Design Icons";
-}
-
-.rd-navbar-fixed .rd-navbar-search-toggle.active span::before {
-  opacity: 0;
-  visibility: hidden;
-  transform: rotate(90deg) scale(0.4);
-}
-
-.rd-navbar-fixed .rd-navbar-search-toggle.active span::after {
-  transform: rotate(0deg) scale(1);
-  opacity: 1;
-  visibility: visible;
-}
-
 .rd-navbar-fixed [class*="rd-navbar-fixed-element"] {
   position: fixed;
   top: 4px;
@@ -8715,22 +8492,6 @@ html.tablet .ui-to-top {
 
 .rd-navbar-fixed .rd-navbar-submenu-toggle {
   color: #9b9b9b;
-}
-
-.rd-navbar-fixed .rd-navbar-search .rd-search-form-submit {
-  color: #cccccc;
-}
-
-.rd-navbar-fixed .rd-navbar-search .rd-search-form-submit:hover {
-  color: #fc6c1e;
-}
-
-.rd-navbar-fixed .rd-navbar-search-toggle {
-  color: #151515;
-}
-
-.rd-navbar-fixed .rd-navbar-search-toggle:hover {
-  color: #fc6c1e;
 }
 
 .rd-navbar-fixed .rd-navbar-collapse {
@@ -9436,7 +9197,6 @@ html.rd-navbar-fixed-linked .page {
 .rd-navbar-classic.rd-navbar-static .rd-navbar-nav-right {
   text-align: right;
   padding-left: 120px;
-  padding-right: 98px;
 }
 
 .rd-navbar-classic.rd-navbar-static .rd-navbar-panel {
@@ -9444,16 +9204,6 @@ html.rd-navbar-fixed-linked .page {
   left: 50%;
   transform: translateX(-50%);
   bottom: -43px;
-}
-
-.rd-navbar-classic.rd-navbar-static .rd-navbar-search {
-  position: absolute;
-  right: 15px;
-  top: 50%;
-}
-
-.rd-navbar-classic.rd-navbar-static .rd-navbar-search .rd-navbar-search-toggle {
-  transform: translateY(-50%);
 }
 
 .rd-navbar-classic.rd-navbar-static.active .rd-search {
@@ -9713,35 +9463,6 @@ html.rd-navbar-fixed-linked.rd-search-active {
   display: none;
 }
 
-.rd-navbar-classic.rd-navbar-fixed .rd-navbar-search .rd-search {
-  width: 300px;
-  left: auto;
-  right: 0;
-}
-
-.rd-navbar-classic.rd-navbar-fixed .rd-navbar-search .rd-search-form-submit,
-.rd-navbar-classic.rd-navbar-fixed
-  .rd-navbar-search
-  .rd-search-form-submit:focus,
-.rd-navbar-classic.rd-navbar-fixed
-  .rd-navbar-search
-  .rd-search-form-submit:active {
-  color: #151515;
-}
-
-.rd-navbar-classic.rd-navbar-fixed
-  .rd-navbar-search
-  .rd-search-form-submit.active,
-.rd-navbar-classic.rd-navbar-fixed
-  .rd-navbar-search
-  .rd-search-form-submit:hover {
-  color: #fb8957;
-}
-
-.rd-navbar-classic.rd-navbar-fixed .rd-navbar-search .rd-search-form-close {
-  display: none;
-}
-
 .rd-navbar-classic.rd-navbar-fixed .brand-logo {
   line-height: 0;
 }
@@ -9909,16 +9630,6 @@ html.rd-navbar-fixed-linked.rd-search-active {
   color: #ffdf61;
 }
 
-.rd-navbar-modern.rd-navbar-static .rd-navbar-search-toggle,
-.rd-navbar-modern.rd-navbar-static .rd-navbar-search-toggle:focus,
-.rd-navbar-modern.rd-navbar-static .rd-navbar-search-toggle:active {
-  color: #ffffff;
-}
-
-.rd-navbar-modern.rd-navbar-static .rd-navbar-search-toggle:hover {
-  color: #ffdf61;
-}
-
 .rd-navbar-modern.rd-navbar-static .rd-menu {
   top: 100%;
   margin-top: 26px;
@@ -10006,10 +9717,6 @@ html.rd-navbar-fixed-linked.rd-search-active {
 .rd-navbar-modern.rd-navbar-static .rd-navbar-collapse * + .list-inline-xs {
   margin-top: 0;
   margin-left: 45px;
-}
-
-.rd-navbar-modern.rd-navbar-static .rd-navbar-search {
-  position: static;
 }
 
 .rd-navbar-modern.rd-navbar-static .rd-search {

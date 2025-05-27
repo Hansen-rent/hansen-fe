@@ -10,7 +10,7 @@
           <h2>СХОДИ ДО ПРОЦВІТАННЯ</h2>
           <hr class="hero-section-divider divider" />
           <h4>ДОСТУПНЕ ЖИТЛО ТА СТАЛИЙ РОЗВИТОК ГРОМАД</h4>
-          <div class="hero-section-logo-wrapper">
+          <!-- <div class="hero-section-logo-wrapper">
             <img
               class="hero-section-logo"
               src="/images/hum-logo-m.png"
@@ -19,7 +19,7 @@
               height="70"
             />
             <p>HUM.GIVING</p>
-          </div>
+          </div> -->
         </div>
       </div>
     </section>
