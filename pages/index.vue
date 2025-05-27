@@ -1,21 +1,23 @@
 <template>
   <div class="page">
-    <!-- Get template now-->
     <section
-      class="parallax-container section"
-      data-parallax-img="/images/landing-bg-01-1920x974.jpg"
+      class="parallax-overlay parallax-container section"
+      data-parallax-img="/images/home-page/main-bg.jpg"
     >
-      <div class="parallax-content section section-full-default context-dark">
-        <div class="section-full-default-item">
-          <div class="container">
-            <h4>a powerful template for</h4>
-            <div class="divider-vertical divider-vertical-secondary-light" />
-            <h2>Construction Company</h2>
-            <a
-              class="button button-less button-secondary-light"
-              href="#get-template"
-              >get template now</a
-            >
+      <div class="parallax-content section hero-section context-dark">
+        <div class="container">
+          <h2>СХОДИ ДО ПРОЦВІТАННЯ</h2>
+          <hr class="hero-section-divider divider" />
+          <h4>ДОСТУПНЕ ЖИТЛО ТА СТАЛИЙ РОЗВИТОК ГРОМАД</h4>
+          <div class="hero-section-logo-wrapper">
+            <img
+              class="hero-section-logo"
+              src="/images/hum-logo-lg.png"
+              alt="HUM Logo"
+              width="210"
+              height="70"
+            />
+            <p>HUM.GIVING</p>
           </div>
         </div>
       </div>
@@ -443,3 +445,79 @@
     </footer>
   </div>
 </template>
+
+<style scoped>
+.parallax-overlay::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--home-page-parallax-overlay-bg);
+}
+
+.hero-section {
+  --section-padding: 60px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: max(80.63vh, 550px);
+  padding-top: var(--section-padding);
+  padding-bottom: var(--section-padding);
+  text-align: center;
+}
+
+.hero-section h2 {
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 52px;
+  text-transform: uppercase;
+}
+
+.hero-section h4 {
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 22px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+@media (min-width: 1200px) and (min-height: 857px) {
+  .hero-section {
+    padding-bottom: 185px;
+  }
+}
+
+.hero-section-divider {
+  height: 6px;
+  width: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  border-color: var(--secondary-col);
+}
+
+.hero-section-divider::after {
+  width: 100%;
+  height: 100%;
+  background-color: var(--secondary-col);
+}
+
+.hero-section-logo-wrapper {
+  position: absolute;
+  bottom: var(--section-padding);
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.hero-section-logo-wrapper p {
+  font-size: 16px;
+}
+
+.hero-section-logo {
+  padding: 2px;
+  background-color: var(--white-col);
+  border-radius: 6px;
+}
+</style>

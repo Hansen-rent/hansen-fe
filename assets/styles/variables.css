@@ -1,5 +1,14 @@
 :root {
+  --white-rgb: 255, 255, 255;
+
   --blue-300-rgb: 37, 53, 114;
 
-  --accent-bg: rgba(var(--blue-300-rgb), 1);
+  --yellow-500-rgb: 239, 195, 12;
+
+  --white-col: rgba(var(--white-rgb), 1);
+  --accent-col: rgba(var(--blue-300-rgb), 1);
+  --secondary-col: rgba(var(--yellow-500-rgb), 1);
+
+  /* Home page */
+  --home-page-parallax-overlay-bg: rgba(var(--blue-300-rgb), 0.5);
 }

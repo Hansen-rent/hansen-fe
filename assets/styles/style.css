@@ -641,43 +641,6 @@ html [class*="section-"].section-bottom-0 {
   }
 }
 
-/*
- * Section Full Default
-*/
-.section-full-default {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 80.63vh;
-  padding-top: 60px;
-  padding-bottom: 60px;
-  text-align: center;
-}
-
-.section-full-default h2 {
-  max-width: 435px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.section-full-default h4 {
-  max-width: 190px;
-  margin-left: auto;
-  margin-right: auto;
-  font-weight: 400;
-  letter-spacing: 0.02em;
-  text-transform: uppercase;
-}
-
-.ie-11 .section-full-default {
-  height: 80.63vh;
-}
-
-@media (min-width: 1200px) and (min-height: 857px) {
-  .section-full-default {
-    padding-bottom: 185px;
-  }
-}
 
 /*
 * Grid modules
