@@ -21,7 +21,7 @@ export default defineNuxtConfig({
       ],
       script: [
         { src: "/scripts/core.min.js", tagPosition: "bodyClose" },
-        { src: "/scripts/script.js", tagPosition: "bodyClose" },
+        // { src: "/scripts/script.js", tagPosition: "bodyClose" },
       ],
     },
   },

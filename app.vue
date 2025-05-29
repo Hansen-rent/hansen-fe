@@ -1,6 +1,6 @@
 <template>
   <div>
-    <!-- <Preloader ref="preloaderRef" /> -->
+    <Preloader ref="preloaderRef" />
 
     <NuxtLayout :name="layout">
       <NuxtPage
@@ -22,15 +22,14 @@ const layout = computed(() => {
 });
 
 const onTransitionStart = () => {
-  initParallax();
+  bootstrapTemplate();
 };
 
 onMounted(() => {
-  initParallax();
+  bootstrapTemplate();
 
   setTimeout(() => {
     preloaderRef.value?.$el.classList.add("loaded");
-  }, 0);
-  // }, 500);
+  }, 500);
 });
 </script>
