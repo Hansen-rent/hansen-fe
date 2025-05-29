@@ -70,7 +70,7 @@
               безпеку та демократію, до якої ми ставимося найвідповідальніше.”
             </p>
             <p>
-              - <span class="flat-text">Президент</span> Володимир Зеленський
+              <span class="flat-text">- Президент</span> Володимир Зеленський
             </p>
           </div>
         </div>
@@ -223,15 +223,5 @@
 
 .flat-text {
   font-weight: 400;
-}
-
-.footer-parallax-overlay::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: var(--home-page-parallax-overlay-bg);
 }
 </style>

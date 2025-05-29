@@ -94,28 +94,28 @@
 	// Initialize scripts that require a loaded page
 	$window.on('load', function () {
 		// Page loader & Page transition
-		if (plugins.preloader.length && !isNoviBuilder) {
-			pageTransition({
-				target: document.querySelector('.page'),
-				delay: 0,
-				duration: 500,
-				classIn: 'fadeIn',
-				classOut: 'fadeOut',
-				classActive: 'animated',
-				conditions: function (event, link) {
-					return !/(\#|callto:|tel:|mailto:|:\/\/)/.test(link) && !event.currentTarget.hasAttribute('data-lightgallery');
-				},
-				onTransitionStart: function (options) {
-					// setTimeout(function () {
-					// 	plugins.preloader.removeClass('loaded');
-					// }, options.duration * .75);
-				},
-				onReady: function () {
-					// plugins.preloader.addClass('loaded');
-					windowReady = true;
-				}
-			});
-		}
+		// if (plugins.preloader.length && !isNoviBuilder) {
+		// 	pageTransition({
+		// 		target: document.querySelector('.page'),
+		// 		delay: 0,
+		// 		duration: 500,
+		// 		classIn: 'fadeIn',
+		// 		classOut: 'fadeOut',
+		// 		classActive: 'animated',
+		// 		conditions: function (event, link) {
+		// 			return !/(\#|callto:|tel:|mailto:|:\/\/)/.test(link) && !event.currentTarget.hasAttribute('data-lightgallery');
+		// 		},
+		// 		onTransitionStart: function (options) {
+		// 			// setTimeout(function () {
+		// 			// 	plugins.preloader.removeClass('loaded');
+		// 			// }, options.duration * .75);
+		// 		},
+		// 		onReady: function () {
+		// 			// plugins.preloader.addClass('loaded');
+		// 			windowReady = true;
+		// 		}
+		// 	});
+		// }
 
 		// Counter
 		if (plugins.counter) {
@@ -261,18 +261,22 @@
 		}
 
 		// Material Parallax
-		if (plugins.materialParallax.length) {
-			if (!isNoviBuilder && !isIE && !isMobile) {
-				plugins.materialParallax.parallax();
-			} else {
-				for (var i = 0; i < plugins.materialParallax.length; i++) {
-					var $parallax = $(plugins.materialParallax[i]);
+		// if (plugins.materialParallax.length) {
+		// 	if (!isNoviBuilder && !isIE && !isMobile) {
+		// 		// setTimeout(() => {
+					
+		// 			console.log(plugins.materialParallax)
+		// 			plugins.materialParallax.parallax();
+		// 		// }, 2000);
+		// 	} else {
+		// 		for (var i = 0; i < plugins.materialParallax.length; i++) {
+		// 			var $parallax = $(plugins.materialParallax[i]);
 
-					$parallax.addClass('parallax-disabled');
-					$parallax.css({"background-image": 'url(' + $parallax.data("parallax-img") + ')'});
-				}
-			}
-		}
+		// 			$parallax.addClass('parallax-disabled');
+		// 			$parallax.css({"background-image": 'url(' + $parallax.data("parallax-img") + ')'});
+		// 		}
+		// 	}
+		// }
 	});
 
 	// Initialize scripts that require a finished document

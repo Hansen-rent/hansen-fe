@@ -1,9 +1,12 @@
 <template>
   <div>
-    <Preloader ref="preloaderRef" />
+    <!-- <Preloader ref="preloaderRef" /> -->
 
     <NuxtLayout :name="layout">
-      <NuxtPage />
+      <NuxtPage
+        :transition="{ name: 'page-fade', mode: 'out-in', appear: false }"
+        @transitionstart="onTransitionStart"
+      />
     </NuxtLayout>
 
     <div class="snackbars" id="form-output-global"></div>
@@ -18,9 +21,16 @@ const layout = computed(() => {
   return route.meta?.layout ?? "default";
 });
 
+const onTransitionStart = () => {
+  initParallax();
+};
+
 onMounted(() => {
+  initParallax();
+
   setTimeout(() => {
     preloaderRef.value?.$el.classList.add("loaded");
-  }, 500);
+  }, 0);
+  // }, 500);
 });
 </script>
