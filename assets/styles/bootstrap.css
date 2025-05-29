@@ -177,7 +177,7 @@ small, .small {
 
 mark, .mark {
 	padding: 5px 10px;
-	background-color: #fc6c1e;
+	background-color: var(--accent-col);
 }
 
 sub,
@@ -197,7 +197,7 @@ sup {
 }
 
 a {
-	color: #fc6c1e;
+	color: var(--accent-col);
 	text-decoration: none;
 }
 
@@ -4094,8 +4094,8 @@ fieldset:disabled .btn {
 	z-index: 2;
 	color: #ffffff;
 	text-decoration: none;
-	background-color: #fc6c1e;
-	border-color: #fc6c1e;
+	background-color: var(--accent-col);
+	border-color: var(--accent-col);
 }
 
 .page-link:focus {
@@ -4113,8 +4113,8 @@ fieldset:disabled .btn {
 .page-item.active .page-link {
 	z-index: 3;
 	color: #ffffff;
-	background-color: #fc6c1e;
-	border-color: #fc6c1e;
+	background-color: var(--accent-col);
+	border-color: var(--accent-col);
 }
 
 .page-item.disabled .page-link {
@@ -4930,7 +4930,7 @@ fieldset:disabled .btn {
 .bs-tooltip-top .tooltip-arrow::before, .bs-tooltip-auto[data-popper-placement^="top"] .tooltip-arrow::before {
 	top: -1px;
 	border-width: 6px 3px 0;
-	border-top-color: #fc6c1e;
+	border-top-color: var(--accent-col);
 }
 
 .bs-tooltip-end, .bs-tooltip-auto[data-popper-placement^="right"] {
@@ -4946,7 +4946,7 @@ fieldset:disabled .btn {
 .bs-tooltip-end .tooltip-arrow::before, .bs-tooltip-auto[data-popper-placement^="right"] .tooltip-arrow::before {
 	right: -1px;
 	border-width: 3px 6px 3px 0;
-	border-right-color: #fc6c1e;
+	border-right-color: var(--accent-col);
 }
 
 .bs-tooltip-bottom, .bs-tooltip-auto[data-popper-placement^="bottom"] {
@@ -4960,7 +4960,7 @@ fieldset:disabled .btn {
 .bs-tooltip-bottom .tooltip-arrow::before, .bs-tooltip-auto[data-popper-placement^="bottom"] .tooltip-arrow::before {
 	bottom: -1px;
 	border-width: 0 3px 6px;
-	border-bottom-color: #fc6c1e;
+	border-bottom-color: var(--accent-col);
 }
 
 .bs-tooltip-start, .bs-tooltip-auto[data-popper-placement^="left"] {
@@ -4976,7 +4976,7 @@ fieldset:disabled .btn {
 .bs-tooltip-start .tooltip-arrow::before, .bs-tooltip-auto[data-popper-placement^="left"] .tooltip-arrow::before {
 	left: -1px;
 	border-width: 3px 0 3px 6px;
-	border-left-color: #fc6c1e;
+	border-left-color: var(--accent-col);
 }
 
 .tooltip-inner {
@@ -4984,7 +4984,7 @@ fieldset:disabled .btn {
 	padding: 6px 10px;
 	color: #ffffff;
 	text-align: center;
-	background-color: #fc6c1e;
+	background-color: var(--accent-col);
 	border-radius: 0.25rem;
 }
 

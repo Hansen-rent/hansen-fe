@@ -27,14 +27,7 @@
               data-filter-parent="#slick-slider-main"
             >
               <li>
-                <a
-                  ref="filterLinkRef"
-                  class="active"
-                  href="#"
-                  data-value=".slide"
-                >
-                  All
-                </a>
+                <a class="active" href="#" data-value=".slide"> All </a>
               </li>
               <li>
                 <a href="#" disabled data-value=".construction">
@@ -416,16 +409,6 @@
     </section>
   </div>
 </template>
-
-<script setup>
-const route = useRoute();
-
-const filterLinkRef = ref();
-
-onMounted(() => {
-  console.dir(filterLinkRef.value);
-});
-</script>
 
 <style scoped>
 .apartment-number {
