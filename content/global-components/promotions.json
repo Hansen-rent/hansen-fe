@@ -1,0 +1,36 @@
+{
+  "label": "Mayan promotions",
+  "icon": "bonuses",
+  "items": [
+    {
+      "image": "/img/uploads/girl-form-wb-09.png",
+      "title": "Make your first deposit and win up to R$5000 + 350FS!",
+      "description": "Mayan Casino Welcome Package",
+      "buttonLabel": "Get bonus",
+      "link": {
+        "label": "Learn more",
+        "url": "/bonuses"
+      }
+    },
+    {
+      "image": "/img/uploads/mayan-monday-cashback-girl.png",
+      "title": "Every Day, get 5% cashback up to R$2000!",
+      "description": "Mayan Daily Cashback 5%",
+      "buttonLabel": "Get bonus",
+      "link": {
+        "label": "Learn more",
+        "url": "/bonus/mayan-daily-cashback"
+      }
+    },
+    {
+      "image": "/img/uploads/reload-wednesday-bonus-girl.png",
+      "title": "Reload Wednesday Bonus",
+      "description": "Reload your game on Wednesday with a Bonus!",
+      "buttonLabel": "Get bonus",
+      "link": {
+        "label": "Learn more",
+        "url": "/bonus/reload-wednesday"
+      }
+    }
+  ]
+}
