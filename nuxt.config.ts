@@ -28,6 +28,8 @@ export default defineNuxtConfig({
 
   css: ["~/assets/styles/index.css"],
 
+  modules: ["@nuxt/content"],
+
   devtools: { enabled: false },
   compatibilityDate: "2025-05-15",
 });

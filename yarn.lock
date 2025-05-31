@@ -944,7 +944,7 @@
     ufo "^1.6.1"
     youch "^4.1.0-beta.7"
 
-"@nuxt/content@3.5.1":
+"@nuxt/content@^3.5.1":
   version "3.5.1"
   resolved "https://registry.yarnpkg.com/@nuxt/content/-/content-3.5.1.tgz#ad4c2de019beacf65c2094094ea8dcc5e4f425e8"
   integrity sha512-WmWgxt5gWPSHBzLBSBZHiU9jaOmTWINMAppWxZ43ZHZCfa0GvdR5+0uTto2EGITPrPsf6iYhKKzSfmJa+Xmp2Q==
