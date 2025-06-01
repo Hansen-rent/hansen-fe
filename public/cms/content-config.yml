@@ -1,13 +1,14 @@
-# backend:
-#   name: github
-#   repo: Hansen-rent/hansen-fe
-#   branch: main
-#   auth_scope: repo
-
 backend:
-  name: git-gateway
+  name: github
+  repo: Hansen-rent/hansen-fe
   branch: main
+  auth_scope: repo
   base_url: https://hansen-fe.netlify.app/
+
+# backend:
+#   name: git-gateway
+#   branch: main
+#   base_url: https://hansen-fe.netlify.app/
 
 media_folder: "public/images/uploads"
 public_folder: "/images/uploads"
