@@ -26,9 +26,18 @@ export default defineNuxtConfig({
     },
   },
 
-  css: ["~/assets/styles/index.css"],
+  css: [
+    "~/assets/styles/index.css",
+    "~/node_modules/vue-final-modal/dist/style.css",
+  ],
 
-  modules: ["@nuxt/content"],
+  modules: ["@nuxt/content", "@pinia/nuxt"],
+
+  runtimeConfig: {
+    public: {
+      apiBaseUrl: "",
+    },
+  },
 
   devtools: { enabled: false },
   compatibilityDate: "2025-05-15",
