@@ -36,6 +36,9 @@ collections:
           - name: label
             label: Block Label
             widget: string
+          - name: icon # ← Добавить это
+            label: Icon
+            widget: string
           - name: items
             label: Cards
             widget: list
