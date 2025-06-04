@@ -1,15 +1,3 @@
-# backend:
-#   name: github
-#   repo: Hansen-rent/hansen-fe
-#   branch: main
-#   auth_scope: repo
-#   base_url: https://hansen-fe.netlify.app/
-
-# backend:
-#   name: git-gateway
-#   branch: main
-#   base_url: https://hansen-fe.netlify.app/
-
 backend:
   name: proxy
   proxy_url: https://hansen-api.onrender.com/api/decap-proxy
